@@ -1,140 +1,121 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beryl ❤️ Cherry | January 24, 2026</title>
+  <title>Beryl & Cherry | Save the Date</title>
   <style>
-    /* General Styles */
+    /* General reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      margin: 0;
       font-family: 'Georgia', serif;
-      background: #fffaf7;
-      color: #333;
-      text-align: center;
-    }
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    /* Header */
-    header {
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                  url('https://images.unsplash.com/photo-1529634892741-20c8da5b4e13') center/cover no-repeat;
-      color: white;
-      padding: 100px 20px;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.3rem;
-      margin: 10px 0;
-    }
-
-    /* Section Cards */
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 40px 20px;
-      background: white;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #b66;
-    }
-    p {
-      font-size: 1.1rem;
+      background: #faf9f7;
+      color: #2f2f2f;
       line-height: 1.6;
     }
 
-    /* Countdown Timer */
+    header {
+      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') center/cover no-repeat;
+      text-align: center;
+      padding: 120px 20px;
+      color: white;
+      background-attachment: fixed;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.4);
+    }
+
+    header .content {
+      position: relative;
+      z-index: 2;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 15px;
+      font-family: 'Cursive', serif;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #3b4a3f;
+    }
+
+    .date-time {
+      font-size: 1.3rem;
+      margin-top: 15px;
+      font-style: italic;
+      color: #666;
+    }
+
     .countdown {
       font-size: 2rem;
-      color: #b66;
       font-weight: bold;
+      color: #6b705c;
       margin-top: 20px;
-      padding: 15px 25px;
-      background: #ffe5e0;
-      border-radius: 10px;
-      display: inline-block;
     }
 
-    /* RSVP Form */
-    .rsvp form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      align-items: center;
-      margin-top: 20px;
-    }
-    .rsvp input, .rsvp button {
-      padding: 12px 20px;
-      font-size: 1rem;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      width: 80%;
-      max-width: 300px;
-    }
     .rsvp button {
-      background: #b66;
+      background: #6b705c;
       color: white;
       border: none;
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      border-radius: 30px;
       cursor: pointer;
-      transition: background 0.3s;
+      margin-top: 25px;
+      transition: 0.3s;
     }
+
     .rsvp button:hover {
-      background: #953;
+      background: #b08968;
     }
 
-    /* Footer */
     footer {
-      background: #333;
+      background: #3b4a3f;
       color: white;
-      padding: 20px;
+      padding: 30px;
+      text-align: center;
       font-size: 0.9rem;
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      header {
-        padding: 60px 10px;
-      }
-      header h1 {
-        font-size: 2.2rem;
-      }
-      header p {
-        font-size: 1rem;
-      }
-      section {
-        padding: 30px 15px;
-      }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Beryl ❤️ Cherry</h1>
-  <p>We’re getting married!</p>
-  <p><strong>January 24, 2026</strong></p>
+  <div class="content">
+    <h1>Beryl & Cherry</h1>
+    <p>Save the Date! </p>
+    <p class="date-time">Saturday, January 24, 2026 | 02:00 PM</p>
+    <p class="date-time">Reception to Follow</p>
+  </div>
 </header>
 
 <section>
-  <h2>Our Story</h2>
-  <p>From friendship to forever — join us as we celebrate our love and begin a new chapter together.</p>
-</section>
-
-<section>
   <h2>Wedding Details</h2>
-  <p>📍 Venue: To be announced<br>
-     🕒 Ceremony: 4:00 PM<br>
-     🎉 Reception to follow</p>
+  <p>📍 Venue: To Be Announced</p>
+  <p>🕑 Ceremony begins at 2:00 PM</p>
+  <p>🎉 Reception to follow</p>
 </section>
 
 <section>
@@ -143,13 +124,9 @@
 </section>
 
 <section class="rsvp">
-  <h2>RSVP</h2>
-  <p>Please let us know if you’ll be able to join our celebration.</p>
-  <form onsubmit="alert('Thanks for RSVPing!'); return false;">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Email Address" required>
-    <button type="submit">Submit RSVP</button>
-  </form>
+  <h2>Join Us</h2>
+  <p>Please confirm your presence in our celebration of love.</p>
+  <button onclick="alert('RSVP form coming soon!')">RSVP Now</button>
 </section>
 
 <footer>
@@ -157,22 +134,23 @@
 </footer>
 
 <script>
-  // Countdown Timer
-  const weddingDate = new Date("Jan 24, 2026 16:00:00").getTime();
+  // Countdown timer
+  const weddingDate = new Date("Jan 24, 2026 14:00:00").getTime();
   const timer = setInterval(function() {
     const now = new Date().getTime();
     const distance = weddingDate - now;
 
     if (distance < 0) {
       clearInterval(timer);
-      document.getElementById("countdown").innerHTML = "Happily Married 🎉";
+      document.getElementById("countdown").innerHTML = "We’re Married! 🎉";
     } else {
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      document.getElementById("countdown").innerHTML = 
-        `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+      document.getElementById("countdown").innerHTML =
+        days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
     }
   }, 1000);
 </script>
